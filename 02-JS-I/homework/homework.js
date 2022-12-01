@@ -121,7 +121,7 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(x%y ===0){
+  if(num % 2 === 0){
     return true
   } else {
     false
@@ -133,7 +133,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(x%y !=0){
+  if(num % 2 !==0){
     return true
   }else{
     return false
@@ -171,14 +171,14 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return Math.floor(num)
+  return Math.ceil(num)
   
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.random+1;
+  return Math.random;
 }
 
 function esPositivo(numero) {
@@ -186,7 +186,7 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if(Number>0){
+  if(numero > 0){
     return "Es positivo"
   }else{
     return "Es negativo"
@@ -232,7 +232,7 @@ function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
 
-    return 3.14 * lado * 2;
+    return lado*4;
   
 }
 
