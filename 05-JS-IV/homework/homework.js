@@ -10,10 +10,11 @@ function crearGato (nombre, edad) {
   const obj = {
     nombre : nombre,
     edad : edad,
-    meow : function(){
-      return 'Meow';
+    meow : function meow(){
+      return "Meow!";
     }
   }
+  return obj;
 }
 
 function agregarPropiedad (objeto, property) {
@@ -33,7 +34,7 @@ function invocarMetodo (objeto, metodo) {
   // Tu código:
 
 
-  objeto[metodo];
+  objeto[metodo]();     //la invocación por argumento siempre requiere bracket notation []
 }
 
 function multiplicarNumeroDesconocidoPorCinco (objetoMisterioso) {
@@ -117,6 +118,8 @@ function agregarAmigo (usuario, nuevoAmigo) {
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
   // Tu código:
+  usuario[amigos] = usuario[amigos.push(nuevoAmigo)];
+  return usuario;
 }
 
 function pasarUsuarioAPremium (usuarios) {
@@ -125,6 +128,7 @@ function pasarUsuarioAPremium (usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
+  
 }
 
 function sumarLikesDeUsuario (usuario) {
