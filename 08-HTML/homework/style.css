@@ -4,18 +4,16 @@ h1{
 img{
     width: 400px;
 }
-.divDiv span{
-    color: blueviolet;
-}
-.thirDiv{
+#thirdDiv{
+    margin: 0 auto;
     height: 600px;
     width: 500px;
     background-color: darkgreen;
     padding: 50px;
-    border: 12px;
-    border-style: groove red;
+    border: 12px solid blue;
 }
-.spanId{
-    font-size: 18px;
+#spanId{
+    margin: 10px auto;
+    font-size: 20px;
     margin: 50px;
 }
